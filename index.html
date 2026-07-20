@@ -3,23 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Gateway</title>
+    <title>MyBrand - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="welcome-card">
-        <div class="logo-icon">☁️</div>
-        <h1>Welcome, Alaa</h1>
-        <p class="subtitle">Cloud Infrastructure Portal</p>
-        
-        <div class="divider"></div>
-        
-        <p class="status-msg">Your Azure App Service environment is up, running, and completely secure.</p>
-        
-        <button id="action-btn" onclick="initializeSession()">Initialize Session</button>
-        <div id="terminal-output" class="hidden"></div>
-    </div>
 
-    <script src="script.js"></script>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyBrand</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Build Something Amazing</h1>
+            <p>We create modern, fast, and beautiful digital experiences tailored to your needs.</p>
+            <a href="contact.html" class="btn">Get Started</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>What We Offer</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast load times to keep your users engaged and happy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p>Clean and intuitive interfaces that look great on any device.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Built with best practices to ensure your data is always safe.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 MyBrand. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
