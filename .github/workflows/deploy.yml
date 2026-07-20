@@ -1,0 +1,21 @@
+name: Deploy Static Website to Azure App Service
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'mywebapp10'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_01E13BDF10B64A43B278803FE5DAE7EC }}
+          package: .
