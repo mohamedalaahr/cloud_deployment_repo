@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'mywebapp10'
+          app-name: 'mywebapp10-test'
           slot-name: 'test'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DA1B023AB5B46B386E2DFA3A20F03FF }}
           package: .
