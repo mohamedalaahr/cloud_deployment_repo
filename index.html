@@ -1,60 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBrand - Home</title>
+    <title>MyBrand - Modern Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <div class="logo">MyBrand</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="logo">MyBrand.</div>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</button>
+                <button class="hamburger" id="hamburger" title="Menu">☰</button>
+            </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section class="hero">
-            <h1>Build Something Amazing</h1>
-            <p>We create modern, fast, and beautiful digital experiences tailored to your needs.</p>
-            <a href="contact.html" class="btn">Get Started</a>
+            <h1>Build Something<br>Amazing Today</h1>
+            <p>We craft modern, lightning-fast, and beautiful digital experiences that help your business grow.</p>
+            <a href="contact.html" class="btn">Start a Project</a>
         </section>
 
-        <!-- Features Section -->
+        <section class="stats">
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>5+</h3>
+                <p>Years Experience</p>
+            </div>
+        </section>
+
         <section class="features">
-            <h2>What We Offer</h2>
+            <h2>Why Choose Us?</h2>
+            <p class="subtitle">We combine design and technology to deliver exceptional results.</p>
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="icon">🚀</div>
-                    <h3>Fast Performance</h3>
-                    <p>Lightning-fast load times to keep your users engaged and happy.</p>
+                    <h3>Blazing Fast</h3>
+                    <p>Optimized for speed and performance to ensure your users never wait.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🎨</div>
-                    <h3>Modern Design</h3>
-                    <p>Clean and intuitive interfaces that look great on any device.</p>
+                    <h3>Pixel Perfect</h3>
+                    <p>Stunning, responsive designs that look flawless on every screen size.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon">🔒</div>
+                    <div class="icon">🛡️</div>
                     <h3>Secure & Reliable</h3>
-                    <p>Built with best practices to ensure your data is always safe.</p>
+                    <p>Built with industry best practices to keep your data safe and sound.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 MyBrand. All rights reserved.</p>
+        <p>&copy; 2024 MyBrand. Crafted with ❤️ for the web.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
