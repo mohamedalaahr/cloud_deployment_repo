@@ -23,13 +23,13 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <h1>Build Something<br>Amazing Today</h1>
             <p>We craft modern, lightning-fast, and beautiful digital experiences that help your business grow.</p>
             <a href="contact.html" class="btn">Start a Project</a>
         </section>
 
-        <section class="stats">
+        <section class="stats reveal">
             <div class="stat-item">
                 <h3>150+</h3>
                 <p>Projects Completed</p>
@@ -45,20 +45,20 @@
         </section>
 
         <section class="features">
-            <h2>Why Choose Us?</h2>
-            <p class="subtitle">We combine design and technology to deliver exceptional results.</p>
+            <h2 class="reveal">Why Choose Us?</h2>
+            <p class="subtitle reveal">We combine design and technology to deliver exceptional results.</p>
             <div class="feature-grid">
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon">🚀</div>
                     <h3>Blazing Fast</h3>
                     <p>Optimized for speed and performance to ensure your users never wait.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon">🎨</div>
                     <h3>Pixel Perfect</h3>
                     <p>Stunning, responsive designs that look flawless on every screen size.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="icon">🛡️</div>
                     <h3>Secure & Reliable</h3>
                     <p>Built with industry best practices to keep your data safe and sound.</p>
@@ -68,8 +68,38 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 MyBrand. Crafted with ❤️ for the web.</p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="logo">MyBrand.</h3>
+                <p>Building the future of the web, one pixel at a time.</p>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="GitHub">⚡</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>hello@mybrand.com</li>
+                    <li>+123 456 7890</li>
+                    <li>San Francisco, CA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> MyBrand. All rights reserved.</p>
+        </div>
     </footer>
+
+    <button id="backToTop" title="Back to Top">↑</button>
 
     <script src="script.js"></script>
 </body>
